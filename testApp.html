@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testStyle.css">
+    <title>Document</title>
+</head>
+<body onload="displayTime(); setPalindrome()" style="background-color: rgb(215, 234, 240);">
+	
+	
+	
+    <div id="section">
+        <h1>Day 1</h1>
+        <h2>Displaying the time</h2>
+        <p>Today is <span id="day"></span> <span id="time"></span></p>
+    </div>
+    <br>
+
+    <div id="section">
+        <h1>Day 2</h1>
+        <h2>Get user input to calculate area of a triangle</h2>
+        <label for="s1">Side 1</label>
+        <input type="text" id="s1">
+        <br>
+        <label for="s1">Side 2</label>
+        <input type="text" id="s2">
+        <br>
+        <label for="s1">Side 3</label>
+        <input type="text" id="s3">
+        <br>
+        <button onclick="calcAreaTriangle()">Calculate</button>
+        <p id="display">The area of this triangle is <span id="triangleArea">nothing yet</span></p>
+        <br>
+        <div onclick="reverseWord()">
+            <p>Click here --&gt; <span id="reverse" ></span></p>
+        </div>
+    </div>
+    <br>
+
+    <div id="section">
+        <h1>Day 3</h1>
+        <h2>Manipulating CSS and HTML Elements via Javascript</h2>
+        <p id="sampleFont">The quick brown fox jumps over the lazy dog</p>
+        <button onclick="changeFont()">Change Font</button>
+        <br><br>
+        <label for="colors">Color List:</label>
+        <select name="colors" id="colorList" onclick="setTextColor()">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            <option selected value="black">Black</option>
+        </select>
+    </div>
+    <br>
+
+	
+	<div id="section">
+		<h1>Learning React</h1>
+		<h2>Following the tutorial on the React website. "https://beta.reactjs.org/learn/add-react-to-a-website"</h2>
+		<div id="like-button-root"></div>
+	</div>
+	<br>
+	
+	<div id="section">
+		<h1>NEIU Peer Leader Site Proposal (Created circa 2021)</h1>
+		<div id="neiu-body">
+			<!-- Banner-->
+			<div id="banner">
+				<p style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif; color:#003DA7; text-align:left; padding-left:105px; font-size:160%;">
+				<span style="border-style:inset; letter-spacing:6px;  padding-left:5px; font-size:115%;" >NEIU</span> <span style="font-size:50px; color:#FDB813; letter-spacing:2px; padding-left:10px;">C.S. </span> <span style="font-size:50px; color:#FDB813;">P</span><span style="line-height:2em;">eer</span>
+				<span style="font-size:50px; color:#FDB813;">L</span>eader
+				<span style="font-size:50px; color:#FDB813;">P</span>rogram</p>
+
+			</div>
+
+
+			<!--Top Nav-->
+			<div id="mainnav">
+				<a href="">&emsp;Home&emsp;</a>
+				<a href="">&emsp;Peer Leader Profiles&emsp;</a>
+				<a href="">&emsp;Locations And Availability&emsp;</a>
+				<a href="">&emsp;Peer Leader Responsibilites&emsp;</a>	
+				<a href="">&emsp;Apply To Be A Peer Leader &emsp;</a>
+				
+			</div>
+
+
+
+			<!-- Side Nav -->
+			<div id="sidenav">
+				<!-- Links will need to be changed depending on what page the user is on -->
+				<ul>
+				<!-- Section link example -->
+				<li><a href="">Responsibilites</a></li>
+				<!-- Sub section examples -->
+				<li style="border:none"><a style="margin-left:18px;" href="">Office Hours</a></li>
+				<li style="border:none"><a style="margin-left:18px;" href="">Workshop Requirements</a></li>
+				<li style="border:none"><a style="margin-left:18px;" href="">Working With Professors</a></li>
+				<li style="border:none"><a style="margin-left:18px;" href="">Weekly Meeting</a></li>
+				</ul>
+				
+			</div>
+
+			<!-- Button that appears when scrolling down page -->
+			<div id="arrow">
+			<a href="#banner" style="padding-top:10px; padding-left:2px;"><b><span style="font-size:120%; padding-top:4px;">&uarr;</span> Top</b></a>
+			</div>
+
+			<!-- Content -->
+			<div id="content">
+			<h2>Peer Leader Responsibilites</h2>
+			<h1>Office Hours</h1>
+			<p>&emsp;&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum libero vitae diam varius, at efficitur diam consequat. Nunc egestas porta mauris eleifend sagittis. Duis egestas augue quis
+			erat faucibus ornare. Sed id fermentum augue, nec placerat neque. Nam eu nisi tincidunt, aliquet dolor vel, semper massa. Aenean cursus pretium suscipit. Nunc suscipit porttitor ante sed condimentum. 
+			Vestibulum bibendum massa vitae blandit blandit. Morbi malesuada tempor leo at ullamcorper.
+			Pellentesque sit amet sem felis. Ut risus ligula, tincidunt et rutrum sed, condimentum non dui. Proin quis lorem nec dui 
+			tristique lobortis. Ut eros tortor, placerat vel diam in, volutpat ullamcorper sem. Donec ac ante eu est laoreet mattis scelerisque id eros. Quisque eu leo mi. Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Maecenas nec sem libero. Morbi in massa a risus faucibus tincidunt. Fusce in suscipit enim, eget maximus odio. Nullam convallis purus quis tortor interdum, in tempor
+			ligula volutpat. Pellentesque fringilla est sit amet auctor ultrices. Curabitur tincidunt nisi nec ullamcorper ultrices. Etiam iaculis fermentum ligula id dignissim.</p>
+
+			<p>&emsp;&emsp;Sed est quam, mollis in nisl eu, viverra luctus diam. Aenean malesuada id odio sed commodo. Ut faucibus pretium velit ut malesuada. Curabitur tortor tortor, volutpat sed
+			 consequat id, accumsan et ante. Ut efficitur congue lectus, vitae tristique turpis commodo sit amet. Suspendisse eu metus ac sem euismod auctor eget at mauris. Praesent rutrum enim sem.
+			Etiam tristique ex nec sodales sagittis. Phasellus vehicula magna non egestas cursus. Vivamus sagittis velit nulla, sit amet blandit est lacinia ut. Mauris neque nisi, porttitor eu faucibus a, 
+			feugiat ut metus. Phasellus ac orci ac eros vulputate cursus a vestibulum nisi. Mauris vitae ultricies ante, non fermentum nulla. Aliquam euismod urna porta molestie egestas. Vestibulum et 
+			lectus felis. Aenean hendrerit purus nec placerat sodales. Vivamus semper nisl magna, at vehicula sem finibus in.
+			In hac habitasse platea dictumst. Nulla non ante fermentum ante lobortis mollis vel eu ex. In id neque non odio bibendum sodales eu id dui.
+			 Praesent egestas sem vitae nisl pellentesque, id accumsan eros suscipit. Donec aliquet convallis risus, in varius metus feugiat a. Nulla a elit sit amet nunc porttitor consectetur
+			 consectetur quis massa. Donec vitae purus dui. Quisque pharetra aliquam nisl, quis cursus nulla. Curabitur orci lacus, ultrices accumsan porttitor at, ullamcorper ut velit. Nam eu lacus non 
+			 magna accumsan pulvinar non id elit. </p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+
+			</div>
+
+
+			<!-- Footer -->
+			<div id="footer">
+			<!--The NEIU watermark/logo is styled this way to shrink it and mantain aspect ratio per brand rules-->
+			<img src="images/wmark.png" alt="NEIU Watermark" style="float:left; max-width:230px; max-height:95px; width: auto; height: auto; margin-top:32px; margin-left:22px;"/>
+			<p style="padding-right:14px; padding-top:10px;">Northeastern Illinois University<br/>
+			5500 North St. Louis Avenue<br/>
+			Chicago, Illinois 60625-4699<br/>
+			(773) 583-4050</p>
+
+			<!--validator icon -->
+				<a href="http://validator.w3.org/check?uri=referer"><img
+					src="http://cs.neiu.edu/~porps/images/html5.png"
+					alt="course icon for HTML5" height="31" width="88" style="float:right;" /></a>
+			  
+			<!-- end of validator icon code -->
+
+			</div>
+		</div>
+		</div>
+	</div>
+	<br>
+	
+	<div id="section">
+        <h1>Sample Store Page *Unfinished*</h1>
+        <div class="blankpage">
+            <div id="titlebar"><p>Cool Clothes</p></div>
+            <div id="col1"><p>Teste</p></div>
+            <div id="col2"><p>Teste</p></div>
+            <div id="col3"><p>Teste</p></div>
+        </div>
+
+    </div>
+	<br>
+
+	<!-- React scripts. "Be sure to replace development.js with production.min.js for development"-->
+    <script src="testApp.js"></script>
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+	<!--Javascript-->
+    <script src="like-button.js"></script>
+</body>
+</html>
