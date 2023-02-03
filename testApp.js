@@ -1,4 +1,5 @@
 let word = "";
+let textSize = 5;
 
 //This fucntion uses a Date object to write information ot the HTML page
 function displayTime() {
@@ -91,5 +92,37 @@ function changeFont() {
 function setTextColor() {
     let color = document.getElementById("colorList");
     document.getElementById("sampleFont").style.color = color.value;
+}
 
+function setSizeUp() {
+    //Can also be done with getElementById()
+    let getText = document.getElementById("sampleFont");
+    let sizeString = window.getComputedStyle(getText, null).getPropertyValue('font-size')
+    let size = parseFloat(sizeString);
+    console.log(sizeString);
+    console.log(size);
+
+    //Can also be done with querySelector
+    //const test = document.querySelector('#sampleFont');
+    //const testStyles = window.getComputedStyle(test);
+    //let currentSize = testStyles.getPropertyValue('font-size');
+
+    if (size < 30) {
+        size += 1;
+        let newSize = (size + 1).toString();
+        document.getElementById("sampleFont").style.fontSize = newSize + "px";
+    }
+}
+
+function setSizeDown() {
+    //Can also be done with getElementById()
+    let getText = document.getElementById("sampleFont");
+    let sizeString = window.getComputedStyle(getText, null).getPropertyValue('font-size')
+    let size = parseFloat(sizeString);
+
+    if (size > 4) {
+        size -= 1;
+        let newSize = (size - 1).toString();
+        document.getElementById("sampleFont").style.fontSize = newSize + "px";
+    }
 }
