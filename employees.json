@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Tom Jones",
+    "id": 20065,
+    "skills": ["Programming", "Drinking coffee", "String array declaration"]
+  },
+  {
+    "name": "Bobby Hill",
+    "id": 20019,
+    "skills": ["That's my purse", "I don't know you"]
+  }
+]
