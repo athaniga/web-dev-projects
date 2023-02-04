@@ -29,16 +29,14 @@
         <br>
         <label for="s1">Side 3</label>
         <input type="text" id="s3">
-        <br>
-        <button onclick="calcAreaTriangle()">Calculate</button>
-        <p id="display">The area of this triangle is <span id="triangleArea">nothing yet</span></p>
-        <br>
-        <div onclick="reverseWord()">
-            <p>Click here --&gt; <span id="reverse" ></span></p>
-        </div>
+        <br><br>
+		<button onclick="calcAreaTriangle()">Calculate</button>
+		<p id="display">The area of this triangle is <span id="triangleArea">nothing yet</span></p>
+		<br>
     </div>
     <br>
 
+	<!--Word play -->
     <div class="section">
         <h1>Day 3</h1>
         <h2>Manipulating CSS and HTML Elements via Javascript</h2>
@@ -55,12 +53,18 @@
             <option value="blue">Blue</option>
             <option selected value="black">Black</option>
         </select>
+		<br><br>
+		<div onclick="reverseWord()">
+			<p>Click here --&gt; <span id="reverse" ></span></p>
+		</div>
     </div>
     <br>
 
 	<div class="section">
 		<h1>Learning JSON</h1>
 		<h2>Displaying information from JSON objects</h2>
+		<button onclick="displayJSONObject()">Display Employee Info</button>
+		<p id="displayAreaForJSON"></p>
 
 	</div>
 	<br>
@@ -71,7 +75,8 @@
 		<div id="like-button-root"></div>
 	</div>
 	<br>
-	
+
+	<!-- PLP Site code-->
 	<div class="section">
 		<h1>NEIU Peer Leader Site Proposal (Created circa 2021)</h1>
 		<div id="neiu-body">
@@ -163,7 +168,8 @@
 		</div>
 	</div>
 	<br>
-	
+
+	<!-- Store page code UNFINISHED-->
 	<div class="section">
         <h1>Sample Store Page *Unfinished*</h1>
         <div class="blankpage">
@@ -176,11 +182,14 @@
     </div>
 	<br>
 
-	<!-- React scripts. "Be sure to replace development.js with production.min.js for development"-->
+	<!--Regular ol' Javascript-->
     <script src="testApp.js"></script>
-	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-	<!--Javascript-->
+	<!--Including jQuery using CDN link-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- React scripts. "Be sure to replace development.js with production.min.js for development"-->
     <script src="like-button.js"></script>
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
 let word = "";
 let textSize = 5;
 
-//This fucntion uses a Date object to write information ot the HTML page
+//This function uses a Date object to write information ot the HTML page
 function displayTime() {
-    //This log statement is not part of this function
     console.log(document.URL);
     var today = new Date();
     var day = today.getDay();
@@ -30,6 +29,8 @@ function displayTime() {
     
 }
 
+//Triangle area calc functions. Still buggy, I still need to wrap my head around the math function and what makes a
+//possible triangle
 function calcAreaTriangle() {
     let a = document.getElementById("s1").value;
     console.log(a);
@@ -61,6 +62,7 @@ function calcAreaTriangle() {
     }
 }
 
+//Silly functions
 function setPalindrome() {
     const palindromeArr = ["RACECAR", "TACO CAT ", "NEVER ODD OR EVEN ", "NO LEMON NO MELON "];
     word = palindromeArr[Math.floor(Math.random()*palindromeArr.length)];
@@ -81,6 +83,7 @@ function reverseWord() {
 
 }
 
+//Begin text changing buttons
 function changeFont() {
     const fonts = ["Arial, Helvetica, sans-serif", "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", "'Franklin Goth" + 
     "ic Medium', 'Arial Narrow', Arial, sans-serif", "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif", "'Lucida S" + 
@@ -99,8 +102,7 @@ function setSizeUp() {
     let getText = document.getElementById("sampleFont");
     let sizeString = window.getComputedStyle(getText, null).getPropertyValue('font-size')
     let size = parseFloat(sizeString);
-    console.log(sizeString);
-    console.log(size);
+
 
     //Can also be done with querySelector
     //const test = document.querySelector('#sampleFont');
@@ -125,4 +127,13 @@ function setSizeDown() {
         let newSize = (size - 1).toString();
         document.getElementById("sampleFont").style.fontSize = newSize + "px";
     }
+
+}
+
+//JSON attempt
+function displayJSONObject() {
+    $.getJSON('C:\\Users\\ahani\\Desktop\\js-projects\\web-dev-projects\\employees.json', function (data) {
+        console.log(data);
+    });
+
 }
